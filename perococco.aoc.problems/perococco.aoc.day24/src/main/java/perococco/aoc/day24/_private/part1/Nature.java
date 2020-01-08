@@ -1,10 +1,8 @@
-package perococco.aoc.day24;
+package perococco.aoc.day24._private.part1;
 
 import lombok.AccessLevel;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import perococco.aoc.day24._private.MaskBuilder;
-import perococco.aoc.day24._private.SubLayout;
 
 /**
  *

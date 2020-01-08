@@ -1,4 +1,4 @@
-package perococco.aoc.day24._private;
+package perococco.aoc.day24._private.part1;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

@@ -1,28 +1,27 @@
-package perococco.aoc;
+package perococco.aoc.day24;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import perococco.aoc.day24.Day24Part1Problem;
+import perococco.aoc.day24._private.BugColony;
 
 /**
  * @author perococco
  **/
-public class TestPart1 {
+public class TestPart2 {
 
     private static final ImmutableList<String> LINES = ImmutableList.of(
             "....#",
             "#..#.",
-            "#..##",
+            "#.?##",
             "..#..",
             "#...."
     );
 
     @Test
-    public void testPart1() {
-        final Day24Part1Problem problem = new Day24Part1Problem(LINES);
-        final int solution = problem.solution();
+    public void testPart2() {
+        BugColony bugColony = BugColony.create(LINES).evolve(10);
 
-        Assertions.assertEquals(2129920, solution);
+        Assertions.assertEquals(99,bugColony.size());
     }
 }

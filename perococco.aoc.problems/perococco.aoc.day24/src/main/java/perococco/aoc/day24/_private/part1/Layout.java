@@ -1,4 +1,4 @@
-package perococco.aoc.day24._private;
+package perococco.aoc.day24._private.part1;
 
 import com.google.common.collect.ImmutableList;
 import lombok.Getter;

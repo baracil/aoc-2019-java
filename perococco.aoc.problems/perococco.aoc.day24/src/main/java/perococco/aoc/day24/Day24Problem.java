@@ -2,7 +2,7 @@ package perococco.aoc.day24;
 
 import com.google.common.collect.ImmutableList;
 import lombok.NonNull;
-import perococco.aoc.day24._private.Layout;
+import perococco.aoc.day24._private.BugColony;
 import perococco.aoc.input.Day;
 import perococco.aoc.input.MultiLineAOCProblem;
 import perococco.aoc.input.Part;
@@ -31,11 +31,11 @@ public abstract class Day24Problem extends MultiLineAOCProblem<Integer> {
     @NonNull
     @Override
     public Integer solution() {
-        final Layout layout = new Layout(getInput());
-        return solve(layout.value());
+        final BugColony colony = BugColony.create(getInput());
+        return solve(colony);
     }
 
-    protected abstract int solve(int initialLayout);
+    abstract int solve(@NonNull BugColony initialLayout);
 
 
 }
