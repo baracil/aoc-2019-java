@@ -1,0 +1,60 @@
+@startuml
+
+(Engineering\n**tambourine**) as engineering
+
+(Sick Bay\n**Klein Bottle**) as sickbay
+
+(Hull Breach) as hullbreach
+
+(Storage) as storage
+(Holo Deck) as holodeck
+
+(Security Checkpoint) as security
+
+(Navigation\n**dark matter**) as navigation
+
+(Hallway\n**molten lava**) as hallway
+
+(Hot Chocolate Fountain) as chocolat
+
+(Gift Wrapping Center\n**monolith**) as gift
+(Crew Quarters\n**fuel cell**) as crew
+(Corridor\n**escape pod**) as corridor
+(Warp Drive Maintenance\n**astrolabe**) as wrap
+(Stables\n**cake**) as stables
+(Observatory\n**giant electromagnet**) as observatory
+(Passages\n**infinite loop**) as passages
+(Science Lab\n**photons**) as science
+(Kitchen) as kitchen
+(Arcade\n**mutex**) as arcade
+
+
+hullbreach -right- holodeck
+hullbreach -left- sickbay
+
+sickbay -left- storage
+sickbay -down---- chocolat
+
+chocolat -left- hallway
+chocolat -right- gift
+
+storage -left- navigation
+storage -up- engineering
+
+navigation -left- security
+
+gift -down- crew
+
+crew -left- corridor
+corridor -left- wrap
+
+hullbreach -down-- stables
+
+stables -right- observatory
+observatory -right- passages
+passages -up- science
+
+stables -down- kitchen
+kitchen -left- arcade
+
+@enduml

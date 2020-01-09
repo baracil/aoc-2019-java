@@ -45,6 +45,7 @@
         <module>perococco.aoc.day22</module>
         <module>perococco.aoc.day23</module>
         <module>perococco.aoc.day24</module>
+        <module>perococco.aoc.day25</module>
     </modules>
 
 </project>

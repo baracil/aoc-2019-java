@@ -1,0 +1,38 @@
+south
+take cake
+south
+west
+take mutex
+east
+north
+north
+west
+west
+west
+take dark matter
+west
+drop cake
+drop mutex
+drop dark matter
+east
+east
+north
+take tambourine
+south
+east
+south
+east
+take monolith
+south
+take fuel cell
+west
+west
+take astrolabe
+east
+east
+north
+west
+north
+west
+west
+west

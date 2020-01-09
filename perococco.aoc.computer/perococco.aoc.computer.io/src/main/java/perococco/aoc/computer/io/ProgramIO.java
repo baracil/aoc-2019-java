@@ -39,6 +39,16 @@ public interface ProgramIO<I, O> extends ProgramIOAccessors<I,O> {
     }
 
     @NonNull
+    static OutputPartBuilder<Nil> fromStdin() {
+        return fromStdin(InputMultiTransformer.TO_ASCII);
+    }
+
+    @NonNull
+    static OutputPartBuilder<Nil> fromStdin(@NonNull InputMultiTransformer<String> transform) {
+        return new OutputPartBuilder<>(new StdinInputPort(transform));
+    }
+
+    @NonNull
     static <T> OutputPartBuilder<Nil> withSupplier(@NonNull Supplier<T> supplier, @NonNull InputTransform<T> transform) {
         return withSupplier(() -> transform.apply(supplier.get()));
     }

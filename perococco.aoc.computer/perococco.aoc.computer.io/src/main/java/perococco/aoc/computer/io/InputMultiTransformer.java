@@ -5,6 +5,7 @@ import lombok.NonNull;
 import perococco.aoc.common.Tools;
 
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public interface InputMultiTransformer<R> extends Function<R,ImmutableList<String>> {
 
@@ -18,4 +19,9 @@ public interface InputMultiTransformer<R> extends Function<R,ImmutableList<Strin
 
     @NonNull
     ImmutableList<String> transform(@NonNull R r);
+
+    @NonNull
+    default InputMultiTransformer<R> before(UnaryOperator<R> preparator) {
+        return r -> transform(preparator.apply(r));
+    }
 }

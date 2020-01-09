@@ -129,5 +129,9 @@
             <groupId>perococco.aoc</groupId>
             <artifactId>aoc-problems-day24</artifactId>
         </dependency>
+        <dependency>
+            <groupId>perococco.aoc</groupId>
+            <artifactId>aoc-problems-day25</artifactId>
+        </dependency>
     </dependencies>
 </project>
